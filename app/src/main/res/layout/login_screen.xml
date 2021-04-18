@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/dog_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/doglogo" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="64dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_text"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/white"
+        android:hint="Enter Email"
+        android:textColorHint="@color/teal_200"
+        android:textScaleX="1.2"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"/>
+
+    <EditText
+        android:id="@+id/enter_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_email"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/teal_200"
+        android:textScaleX="1.2"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"
+        />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/enter_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_login"
+        android:layout_marginTop="16dp"
+        android:text="need an account? register here:"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_login"
+        android:layout_toRightOf="@+id/text_register"
+        android:background="@color/clear"
+        android:text="REGISTER"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_register"
+        android:layout_toRightOf="@id/text_register"
+        android:background="@color/clear"
+        android:text="Contact us"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"/>
+
+</RelativeLayout>
